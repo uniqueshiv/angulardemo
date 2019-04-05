@@ -1,0 +1,35 @@
+<!-- Main Toolbar of an App -->
+<mat-toolbar color="accent">
+    <span>Shiva</span>
+    <span class="demo-toolbar"></span>
+</mat-toolbar>
+
+<mat-card>
+    <!-- Title of an Card -->
+    <mat-card-title>
+        Recipe Finder
+    </mat-card-title>
+
+    <mat-card-content>
+
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="ingredients" ngModel>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="demo-full-width">
+                            <input matInput placeholder="dishes" ngModel>
+                        </mat-form-field>
+                    </td>
+                     <td>
+                         <button mat-raised-button color="accent" (click)= "Search()">Submit </button>
+                    </td>
+                </tr>
+
+            </table>
+
+    </mat-card-content>
+</mat-card>
